@@ -2,7 +2,6 @@
 This application was developed to demonstrate the Dependency Inversion Principle, ensuring a modular, scalable, and maintainable architecture.
 It is designed as a notification system that is capable to send notification from various channels (such as email and SMS).
 
-
 ## Getting Started
 
 # Compiling the Application
