@@ -12,6 +12,10 @@ export class NotificationSender {
 
     sendNotification(payload: INotificationPayload): void {
         const service = this.services[payload.channel];
+
+        if (!service) {
+            throw new Error(`No notification service was found for channel '${payload.channel}'`);
+        }
         service.send(payload.message, payload.recipient);
     }
 }
